@@ -16,10 +16,13 @@ int main(){
 	x = x + 20;
 	printf("x =  %d haha\n",x);
 	x = x /5;
-	printf("x =  %d haha\n",x);
+	printf("x =  %d xin\n",x);
 	x = x +h;
 	y = x + 30.5;
 	printf("y = %f\n",y);
 	x = (int)(x + 3.14);
+	scanf("%d",&x);
+	scanf("%f",&y);
+	printf("y vua nhap: %f\n", y);
 	return 0;
 }
