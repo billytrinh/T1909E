@@ -32,16 +32,30 @@ void inmangsonguyen(int ary[],int n){
 		printf("%d \n",ary[i]);
 	}
 }
+void nhapmang(int ary[],int n){
+	for (int i = 0; i < n; ++i)
+	{
+		printf("nhap:\n");
+		scanf("%d",&ary[i]);
+	}
+}
 void inmangsonguyencach2(int *ary){
-	for (int i = 0; i < sizeof(ary)/sizeof(int); ++i)
+	for (size_t i = 0; i < sizeof(ary)/sizeof(int *); ++i)
 	{
 		printf("%d \n",ary[i]);
 	}
 }
+bool checksoduong(int a){
+	return a > 0;
+}
 int main(){
 	int ary[5] = {3,1,5,6,2};
-	inmangsonguyen(ary,5);
+	//inmangsonguyen(ary,5);
 	inmangsonguyencach2(ary);
+	if(checksoduong(5)){
+
+	}
+	bool kq = checksoduong(-12);
 	int a = 10,b=20;
 	// day la su dung
 	int z = binhphuongtong(a,b);
